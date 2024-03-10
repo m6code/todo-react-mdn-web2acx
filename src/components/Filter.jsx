@@ -2,7 +2,7 @@ import React from 'react'
 
 function Filter() {
     return (
-        <div>
+        <div className={"filter"}>
             <label htmlFor="selectMenu">Filter: </label>
             <select id={"selectMenu"}>
                 <option id={"all"} value={"all"}>All</option>

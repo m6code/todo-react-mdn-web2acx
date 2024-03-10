@@ -6,3 +6,20 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Resources
+### CSS Reset
+- https://piccalil.li/blog/a-more-modern-css-reset/
+- https://www.joshwcomeau.com/css/custom-css-reset/
+- https://andy-bell.co.uk/a-modern-css-reset/
+
+## TODOs
+- [x] HTML Structure
+- [x] Add CSS Styling
+  - [ ] Style checkbox with app theme
+  - [ ]
+- [ ] Add Javascript/React Functionalities
+- [ ] Add responsiveness
+- [ ] Add Accessibility features
+  - [ ] for screen readers
+  - [ ] for keyboard users

@@ -1,16 +1,15 @@
 import React from 'react'
-import Button from "./Button.jsx";
 
 const TodoItem = (props) => {
     return (
         <div className={"todo-item"}>
             <div className="todo-text">
                 <input type="checkbox"/>
-                Read a book
+                <span>Read a book </span>
             </div>
             <div className="todo-actions">
-                <Button className={"deleteBtn"} text={"Delete"}/>
-                <Button className={"editBtn"}  text={"Edit"}/>
+                <button className={"btn deleteBtn"}>Delete</button>
+                <button className={"btn editBtn"}>Edit</button>
             </div>
         </div>
     )

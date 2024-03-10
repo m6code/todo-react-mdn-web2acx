@@ -1,13 +1,12 @@
 import React from 'react'
 import SearchField from "./SearchField.jsx";
-import Button from "./Button.jsx";
 
 const AddForm = () => {
     return (
-        <div>
+        <div className={"add-form"}>
             <form action="">
-                <SearchField />
-                <Button text={"Add"} className={"addBtn"}/>
+                <SearchField/>
+                <button className={"btn addBtn heading"} type="submit">Add</button>
             </form>
         </div>
     )

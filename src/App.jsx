@@ -6,16 +6,20 @@ import TodoItem from "./components/TodoItem.jsx";
 
 function App() {
     return (
-        <>
-            <h1 className={"app-title"}>Todo Matic</h1>
+        <div className={"container"}>
+            <h1 className={"app-title heading"}>Todo Matic</h1>
             <div className="backdrop">
                 <AddForm/>
                 <Filter/>
-                <div> 5 Tasks Left</div>
+                <div className={"task-left"}> 5 Tasks Left</div>
                 <hr/>
                 <TodoItem/>
+                <TodoItem/>
+                <TodoItem/>
+                <TodoItem/>
+                <TodoItem/>
             </div>
-        </>
+        </div>
     )
 }
 
