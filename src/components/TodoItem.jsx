@@ -4,12 +4,19 @@ const TodoItem = (props) => {
     return (
         <div className={"todo-item"}>
             <div className="todo-text">
-                <input type="checkbox" checked={props.completed} onChange={props.toggleTaskCompleted(props.id)}/>
-                <span
+                <input
+                    id={props.id}
+                    type="checkbox"
+                    defaultChecked={props.completed}
+                    onChange={() => props.toggleTaskCompleted(props.id)}
+                />
+                <label
                     key={props.id}
-                    id={props.id}>
+                    htmlFor={props.id}
+                    className={props.completed ? "completed-task" : ""}
+                >
                     {props.name}
-                </span>
+                </label>
             </div>
             <div className="todo-actions">
                 <button className={"btn deleteBtn"} onClick={props.deleteTask(props.id)}>Delete</button>

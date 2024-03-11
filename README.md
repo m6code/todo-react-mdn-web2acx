@@ -24,8 +24,8 @@ Currently, two official plugins are available:
   - [x] Display todo from state
   - [ ] Edit todo
   - [ ] Delete todo
-  - [ ] Mark todo as done
-  - [ ] Add strike through on todo complete
+  - [x] Mark todo as done
+    - [x] Add strike through on todo complete
 - [ ] Add responsiveness
 - [ ] Add Accessibility features
   - [ ] for screen readers

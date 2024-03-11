@@ -13,7 +13,7 @@ const FILTER_MAP = {
     completed: (task) => task.completed,
 };
 
-const FILTER_NAMES = Object.keys(FILTER_MAP);
+// const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
     const [tasks, setTasks] = useState(props.tasks);
@@ -42,7 +42,16 @@ function App(props) {
     const headingText = `${taskList.length} ${tasksNoun} left`;
 
     function toggleTaskCompleted (id) {
-        // Todo: implement
+        const updatedTasks = tasks.map((task) => {
+            // if this task has the same ID as the edited task
+            if (id === task.id) {
+                // use object spread to make a new obkect
+                // whose `completed` prop has been inverted
+                return { ...task, completed: !task.completed };
+            }
+            return task;
+        });
+        setTasks(updatedTasks);
     }
 
     function deleteTask(id) {
