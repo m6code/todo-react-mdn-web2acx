@@ -4,7 +4,6 @@ import './App.css'
 import Filter from "./components/Filter.jsx";
 import TodoItem from "./components/TodoItem.jsx";
 import {nanoid} from "nanoid";
-import Todo from "../ref/src/components/Todo.jsx";
 
 
 const FILTER_MAP = {
