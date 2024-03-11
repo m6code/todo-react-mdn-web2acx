@@ -21,6 +21,7 @@ Currently, two official plugins are available:
 - [ ] Add Javascript/React Functionalities
   - [x] Add new todo
   - [x] Filter todo list
+  - [x] Display todo from state
   - [ ] Edit todo
   - [ ] Delete todo
   - [ ] Mark todo as done

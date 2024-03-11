@@ -24,6 +24,7 @@ body {
     display: grid;
     place-items: center;
     margin: 16px;
+    text-transform: capitalize;
 }
 
 .filter {
