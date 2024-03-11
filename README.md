@@ -17,8 +17,14 @@ Currently, two official plugins are available:
 - [x] HTML Structure
 - [x] Add CSS Styling
   - [ ] Style checkbox with app theme
-  - [ ]
+  - [ ] strike through text design
 - [ ] Add Javascript/React Functionalities
+  - [x] Add new todo
+  - [x] Filter todo list
+  - [ ] Edit todo
+  - [ ] Delete todo
+  - [ ] Mark todo as done
+  - [ ] Add strike through on todo complete
 - [ ] Add responsiveness
 - [ ] Add Accessibility features
   - [ ] for screen readers
