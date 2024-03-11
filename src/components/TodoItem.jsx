@@ -19,8 +19,8 @@ const TodoItem = (props) => {
                 </label>
             </div>
             <div className="todo-actions">
-                <button className={"btn deleteBtn"} onClick={props.deleteTask(props.id)}>Delete</button>
-                <button className={"btn editBtn"} onClick={props.editTask(props.id)}>Edit</button>
+                <button className={"btn deleteBtn"} onClick={() => props.deleteTask(props.id)}>Delete</button>
+                <button className={"btn editBtn"} onClick={ () => props.editTask(props.id)}>Edit</button>
             </div>
         </div>
     )

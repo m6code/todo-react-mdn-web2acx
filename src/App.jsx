@@ -55,7 +55,8 @@ function App(props) {
     }
 
     function deleteTask(id) {
-        // Todo: implement delete task
+        const remainingTasks = tasks.filter((task) => id !== task.id);
+        setTasks(remainingTasks);
     }
 
     function editTask(id) {
