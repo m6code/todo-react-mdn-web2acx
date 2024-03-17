@@ -1,0 +1,146 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.backdrop {
+    width: 676px;
+    height: auto;
+    color: white;
+    padding: 48px;
+    border-radius: 36px;
+    background: linear-gradient(141deg, #A572E3 -8.34%, #4E3870 48.02%, #6F2047 110.31%);
+    box-shadow: 8px 8px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+.add-form, .filter, .task-left {
+    display: grid;
+    place-items: center;
+    margin: 16px;
+    text-transform: capitalize;
+}
+
+.filter {
+    margin-top: 0;
+}
+
+
+.inputField {
+    width: 350px;
+    height: 54px;
+    border-radius: 36px;
+    background: #FFF;
+    padding: 8px 24px;
+    box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.25) inset, 4px 8px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    border-radius: 36px;
+    padding: 8px 16px;
+}
+
+.addBtn {
+    width: 162px;
+    height: 54px;
+    margin: 24px 0 24px 36px;
+    font-size: 24px;
+    border-radius: 36px;
+    background: #EC4899;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.addBtn:active {
+    background-color: #BB4061;
+}
+
+
+.editBtn {
+    color: #fc6bb7;
+    background-color: inherit;
+    border-color: white;
+    font-size: 18px;
+}
+
+.editBtn:hover {
+    color: #EC4899;
+    background-color: rgba(236, 72, 153, 0.11);
+}
+
+.editBtn:active {
+    /*background-color: rgba(236, 72, 153, 0.11);*/
+    color: #6F2047;
+}
+
+
+.deleteBtn {
+    background-color: inherit;
+    border-radius: unset;
+    border: unset;
+    color: #fc6bb7;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+
+.deleteBtn:hover {
+    color: #EC4899;
+}
+
+
+.deleteBtn:active {
+    color: #6F2047;
+}
+
+.app-title {
+    text-align: center;
+    color: #0064A4;
+    margin-bottom: 6px;
+}
+
+.task-left {
+    color: #FFF;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.todo-item {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.todo-text {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.todo-text input {
+    margin-right: 12px;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: rgba(216, 216, 216, 0.91);
+}
+
+.hidden {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}
