@@ -27,7 +27,7 @@ const TodoItem = (props) => {
         else {
             alert("Please enter a task before submitting")
         }
-        setNewName("");
+        setNewName(newName);
         setIsEditing(false);
     }
 
@@ -48,11 +48,11 @@ const TodoItem = (props) => {
                     type="button"
                     className="btn deleteBtn todo-cancel"
                     onClick={() => setIsEditing(false)}>
-                    Cancel
+                    Cancel <span className="hidden">renaming {props.name}</span>
                 </button>
 
                 <button type="submit" className="btn editBtn">
-                    Save
+                Save <span className="hidden">new name for {props.name}</span>
                 </button>
             </div>
         </form>
@@ -76,12 +76,15 @@ const TodoItem = (props) => {
                 </label>
             </div>
             <div className="todo-actions">
-                <button className={"btn deleteBtn"} onClick={() => props.deleteTask(props.id)}>Delete</button>
+                <button className={"btn deleteBtn"}
+                        onClick={() => props.deleteTask(props.id)}>
+                    Delete <span className="hidden"> {props.name}</span>
+                </button>
                 <button
                     className={"btn editBtn"}
                     ref={editButtonRef}
                     onClick={() => setIsEditing(true)}>
-                    Edit
+                    Edit <span className="hidden"> {props.name}</span>
                 </button>
             </div>
         </div>
